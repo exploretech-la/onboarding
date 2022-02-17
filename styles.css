@@ -1,0 +1,15 @@
+h1 {
+  color: red;
+}
+
+body {
+  background-color: powderblue;
+}
+
+p {
+  color: purple;
+}
+
+.bigFont {
+  font-size: 300%;
+}
