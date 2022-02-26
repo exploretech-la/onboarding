@@ -85,7 +85,7 @@ The final step is to connect our `index.html` and `styles.css` together. Inside 
 
 Congrats again! Now your website has a little bit more style!
 
-Once again, there are many different CSS attributes we can utilize to make our websites pretty, so I would recommend using Google to look them up.
+Once again, there are many different CSS attributes we can utilize to make our websites pretty. We can center text, add borders, even animate things, so I would recommend using Google to look them up.
 
 ## Classes
 
@@ -135,7 +135,7 @@ There is much more we can do with classes, but this is its most basic functional
 
 I'm gonna assume that if you've made it this far then you've taken at least either PIC 10A or CS 31. So when I say Javascript is just an easier version of C++ then I hope there's a sigh of relief. Feel free to refer to [this cheatsheet](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction/cheatsheet) to learn the syntax and ask the current webmaster for any questions. Now how does this relate to web development?
 
-Javascript are all the pockets and zippers of our outfit. It gives functionality to any website. Have you every clicked a button? Congrats, you ran someone elses Javascript code. Now let's hook our basic webpage example. Let's create one more file in our directory called `script.js` with one line of code:
+Javascript are all the pockets and zippers of our outfit. It gives functionality to any website. Have you every clicked a button? Congrats, you ran someone elses Javascript code. Now let's hook up our basic webpage example. Let's create one more file in our directory called `script.js` with one line of code:
 
 ```
 console.log("Hello world!");
@@ -149,7 +149,7 @@ In `index.html` let's add one more tag to our head:
 <head>
     <title>Web Page Title</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js">
+    <script src="script.js async">
 </head>
 <body>
     <h1 class="bigFont">My First Heading</h1>
