@@ -196,4 +196,43 @@ Anyways... just like CSS, there are multiple ways we could have added this click
 
 Ohhhhh boi we're here... If Javascript is our pockets and zippers, then React is like a sexy chain necklace that helps tie the entire outfit together. ;)
 
-Need to write this up...
+**React** is a Javascript library that makes it simple to build interactive interfaces. Remember how in order to make the "Click me!" button to work we had to drop code into 2 different places? With React we can do all of that in one!
+
+At this point you should have Node installed. In the terminal type in the command:
+
+```
+npx create-react-app react-app
+```
+
+A new folder should appear with the name 'react-app' and inside are a bunch of new files. We won't go over what each and every file does here, just the important ones for now. Now let's try running the app locally. In the terminal again type:
+
+```
+cd react-app
+npm start
+```
+
+A new window should appear in your browser and _voila_! You're running React!
+
+React is a **Component-Based Language**. For now, you should just understand that it essentially allows us to save a collection of HTML tags as an object through Javascript, and then pass it around like you would a normal variable. Confusing? Let's dive into the code to take a look at what a **React Component** looks like.
+
+Navigate to `src/App.js`. You'll notice there's, some HTML being returned by a function called `App`. This is where the `App Component` is coded.
+
+Now navigate to `src/index.js`. There's some fancy stuff going on but what I want you to notice is that the HTML tags aren't as we would normally expect them. In particular, there's a new HTML tag being used called `<App />`. This is where the `App Component` is used and rendered.
+
+Still confusing? Let's try one more thing. Inside `src/index.js` try copy pasting another `<App />`:
+
+```
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+```
+
+Click save and checkout the browser and you'll see our application doubled. As you can see, the `<App />` component is now reusable like a custom HTML tag. Nice!
+
+## What makes a React Component?
+
+render stuff blah blah blah i'm lazy do this later
