@@ -70,7 +70,7 @@ Congrats! You just built your first website! If you're still using VSCode then r
 
 Here we used a basic header tag and a paragraph text tag. There are countless other tags in HTML and its not worth memorizing all of them. Instead, I would use Google or refer to this [master list](https://www.w3schools.com/TAGS/default.ASP) if you needed to use something.
 
-Also, if you wanna learn more about what the heck is actually going on, feel free to refer to our very own web development workshop slides, sponsored by exploretech.la [here](https://docs.google.com/presentation/d/1QB4seIW1s97Aqrf-Wn8n9UQq6YNM3opvqzt3ZUZtGOM/edit#slide=id.g647368f17e_0_7) >:)
+Also, if you wanna learn more about what the heck is actually going on, feel free to refer to our very own web development workshop slides, sponsored by exploretech.la [here](https://docs.google.com/presentation/d/1OKKO_WLaWZQBqxTG6vVIomwo_JGSlF1sWWBraHu5l44/edit?usp=sharing) >:)
 
 One of the most important properties of HTML tags is nesting elements inside each other. This is kinda difficult to explain over text, so defer to whoever the Webmaster is at the time to learn more, its kinda important >>:))
 
