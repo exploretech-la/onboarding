@@ -4,6 +4,8 @@ For now it’s just notes for Jared, Kunal and Emily :-)
 
 Table of Contents
 
+- [Prerequisites](#prerequisites)
+  - [Visual Studio Code](#visual-studio-code)
 - [HTML](#html)
 - [CSS](#css)
   - [Classes](#classes)
@@ -13,6 +15,35 @@ Table of Contents
 ---
 
 When looking at a website we can ask three questions: how do things appear on the screen, how can we style them, and how can we interact with it? **Web development** consists of three languages that answer these questions precisely: **HTML** allows us to decide what goes on the page, **CSS** allows us to decide how it looks, and **Javascript** allows us to add functionality to them. These are the building blocks of any website and anything you learn stems about web development relates back in some way to one of these three. For example, the exploretech website is built using a Javascript framework called **React** which essentially allows us to more easily manipulate HTML elements using Javascript. Let’s take a deeper look into what each of these do…
+
+# Prerequisites
+
+There are two things we need to download before we start:
+
+- Visual Studio Code [[download](https://code.visualstudio.com/download)]
+- Node.js [[download](https://nodejs.org/en/download/)]
+  Follow these link to install these softwares. If/when prompted, all the default parameters should suffice. I promise I'm not trying to hack your laptop... ;)
+
+## Visual Studio Code
+
+Visual Studio Code (or VSCode) is a text editor. If you've taken any coding class at UCLA, then your professor would have made you download a software to edit your code. This is that step, except VSCode is what like 90% of engineers use. Literally. If you get used to this editor then you'll probably be fine for the rest of your career.
+
+There is one thing I want thing I need you to do with VSCode though. We're going to install an extension called 'Live Server'. Find the 'Extensions' tab on the left, search for 'Live Server', then click install. I will explain what this does in a bit.
+
+Another optional extension you can install is called 'Prettier'. It's a code formatter that automatically makes your code more legible upon saving. This is also a common tool used in the industry and is incredubly useful.
+
+## Node.js
+
+Node.js is an asynchronous event-driven JavaScript runtime. It's used to develop event-driven servers like we will later in this onboarding. But that probably doesn't mean much to you right now. All you need to now is that we'll be using it to eventually run React.
+
+In order to make sure Node downloaded correctly, open the terminal in your laptop and run the following commands:
+
+```
+node -v
+npm -v
+```
+
+If you see a version number output and not an error, then you're all set to start learning web development!!!
 
 # HTML
 
@@ -33,7 +64,9 @@ In code, a tag is indicated by the '_element name_' wrapped by less than and gre
 </html>
 ```
 
-Congrats! You just built your first website! Double click the file to open it (or if you're using VSCode then right click and select 'Open With Live Server').
+Congrats! You just built your first website! If you're still using VSCode then right click and select 'Open With Live Server'. Otherwise, you can just double click on the HTML file in your File Explorer. It will open website locally within your default browser.
+
+[**Note:** If you opened the HTML file with Live Server, then whenever you make an edit to your website in VSCode then it will update automatically in the browser (just make sure you click save `Cmd+s` or `Ctrl+S`). This won't work if you opened it from the File Explorer, you would have to close and reopen the file.]
 
 Here we used a basic header tag and a paragraph text tag. There are countless other tags in HTML and its not worth memorizing all of them. Instead, I would use Google or refer to this [master list](https://www.w3schools.com/TAGS/default.ASP) if you needed to use something.
 
@@ -181,11 +214,11 @@ Congrats! You wrote your first line of working Javascript! But we can do better.
 And to our `script.js`:
 
 ```
-document.getElementById("demo").addEventListener("click", foo);
-
 const foo = () => {
   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
 }
+
+document.getElementById("demo").addEventListener("click", foo);
 ```
 
 Refresh your webpage and try out your new website! Now here's a snazzy brain teaser: do you think you can make so if you click the button it can go back to the previous text? Sus.
